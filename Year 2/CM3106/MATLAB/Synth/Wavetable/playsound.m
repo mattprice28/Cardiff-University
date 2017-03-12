@@ -1,0 +1,1 @@
+function playsound(y,Fs)% playsound(y,Fs)  workaround to play sound on a mac    sound(y, Fs);

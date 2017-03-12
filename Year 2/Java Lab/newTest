@@ -1,0 +1,81 @@
+public class newTest extends Thread {
+	public static test[] thread=new test[10000];
+	public static ClassA[] a=new ClassA[10000];
+	public static Factory theFactory=new Factory();
+
+	public int myThreadNumber;
+
+	public test(int threadNumber) {
+		myThreadNumber=threadNumber;
+	}
+
+	public void run() {
+		a[myThreadNumber]=theFactory.createA();
+	}
+
+	public static void main(String[] args) throws Exception {
+		int i;
+
+		for (i=0; i<10000; i++) thread[i]=new test(i);
+		for (i=0; i<10000; i++) thread[i].start();
+		for (i=0; i<10000; i++) thread[i].join();
+		for (i=0; i<10000; i++) {
+			ClassA theA=a[i];
+			if (theA==null)
+				System.out.println("OOPS ... a is null!");
+			else {
+				ClassB theB=theA.getB();
+				if (theB==null)
+					System.out.println("OOPS ... b is null!");
+				else
+				if (theB.getA() != theA)
+					{System.out.println("Hey, we have a problem with 'a' number " + i);}
+			}
+		}
+        }
+}
+
+class Factory {
+	ClassA ourA;
+	ClassB ourB;
+
+	public ClassA createA() {
+		synchronized(this) {
+// In the next line, although ourA is of type ClassA, we now assign it to an instance of the subclass ConcreteClassA
+			ourA=new ConcreteClassA();
+			ourB=new ClassB();
+
+			ourA.setB(ourB);
+			ourB.setA(ourA);
+// Need all four of the above lines synchronized so that ourA and ourB don't change while we're using them
+
+			return ourA;
+// Need this synchronised too; else we might return a different ourA!
+
+// Since each ClassA/ClassB pair is only associated with a single thread, and the above code ensures that a thread has exclusive access to ourA and ourB while they are referring to the new instances being created, it means that no problems will be encountered even though we have not actually made ClassA and ClassB thread-safe. ClassA is not thread-safe because (for example) one thread could be accessing it via the getB() method while another could be updating it via the setB() method. However, this will never happen in this *particular* program, now that we have sorted out the synchronization of the Factory createA() method.
+		}
+	}
+}
+
+// Changed ClassA into an abstract class, pushing all the implementation down into a new subclass ConcreteClassA.
+// In their place, declare the signatures, only, of the two methods, declaring them abstract.
+// In general, this would mean that the Factory would be able to choose between more than one concrete subclass of ClassA
+// (if such existed); the creation method (createA()) would typically have some parameters which were used in determining
+// which class to make a new instance of.
+
+abstract class ClassA {
+	abstract public void setB(ClassB b);
+	abstract public ClassB getB();
+}
+
+class ConcreteClassA extends ClassA {
+	private ClassB theB;
+	public void setB(ClassB b) {theB=b;}
+	public ClassB getB() {return theB;}
+}
+
+class ClassB {
+	private ClassA theA;
+	public void setA(ClassA a) {theA=a;}
+	public ClassA getA() {return theA;}
+}

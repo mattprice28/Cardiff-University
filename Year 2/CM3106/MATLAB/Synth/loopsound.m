@@ -1,0 +1,1 @@
+function loopsound(y,Fs,n)% loopsound(y,n) simply loop sample y at sample rate Fs,  n timesyl	= []; for l=1:n    yl = [yl,y]; end;sound(yl,Fs);

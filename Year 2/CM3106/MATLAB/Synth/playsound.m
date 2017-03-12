@@ -1,0 +1,1 @@
+function playsound(y,Fs)	sound(y,Fs);
