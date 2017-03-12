@@ -1,0 +1,213 @@
+h6{
+	text-align: right;
+	padding-right: 10px;
+}
+
+.header-cont {
+    width: 100%;
+    position:fixed;
+    top:0px;
+    margin: auto;
+    font-family: verdana, serif;
+}
+
+.header {
+	height: 200px;
+    background:linear-gradient(#3D3D29, white);
+    border-top:1px solid #CCC;
+    margin:0px auto;
+}
+
+ul {
+	text-align: center;
+}
+
+ul li {
+	list-style: none;
+	display: inline;
+	padding: 5px;
+	border-style: inset;
+	border-spacing: 2px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 14pt;
+	font-family: Verdana, serif;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+
+.container{
+	background: linear-gradient(#3D3D29, white);
+	font-family: verdana, serif;
+	margin: 220px auto;
+    width: 90%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+h1{
+	font-size: 36pt;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 0px;
+	vertical-align: middle;
+}
+
+.banner{
+	display: inline;
+	height: 40px;
+	width: 80px;
+}
+
+body{
+	background-color: white;
+	margin:0px;
+}
+
+h2{
+	font-size: 30pt;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 20px
+}
+
+h3{
+	font-size: 20pt;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px
+}
+
+img{
+	height: 200px;
+	width: 200px;
+}
+
+.guestbook {
+   text-align: left;
+   padding: 5px;
+   width: 96%; 
+   margin-left:2%; 
+   margin-right:2%;
+   font-size: 14pt;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 1px solid black;
+
+}
+table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   text-align: center;
+   background-color: linear-gradient(#50503E, white);
+   padding: 5px;  
+   margin-left:2%; 
+   margin-right:2%;
+   font-size: 14pt;
+   font-family: verdana, serif;
+
+}
+
+h4 {
+	font-size: 14pt;
+	font-family: Verdana, serif;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 3%;
+}
+
+h5 {
+	font-size: 14pt;
+	font-family: Verdana, serif;
+	color: black;
+	font-weight: bold;
+	text-align: right;
+	margin-right: 3%;
+}
+
+.basket{
+
+   border: 1px solid black;
+   border-collapse: collapse;
+   border-radius: 5px;
+   text-align: center;
+   background-color: linear-gradient(#50503E, white);
+   padding: 5px;
+   width: 96%; 
+   margin-left:2%; 
+   margin-right:2%;
+   font-size: 14pt;
+   font-family: verdana, serif;
+	
+}
+
+
+
+label
+{
+	float: left;
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.date{
+	width: 30px;
+	margin-right: 2px;
+}
+
+.submit{
+	display: block;
+	margin: 10px auto;
+}
+
+p{
+	text-align: left;
+}
+
+.info{
+	color: red;
+	text-align: center;
+}
+
+.help{
+	color: black;
+	text-align: center;
+}
+
+.message{
+	text-align: center;
+	vertical-align: top;
+}
+
+.homepage{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.largeInput{
+	width: 50%;
+	height: 100px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.messagelabel{
+	text-align: left;
+	margin-left: 25%;
+	
+}
+
+.tableSort{
+	text-align: right;
+	margin-right: 2%;
+	padding-bottom: 5px;
+}

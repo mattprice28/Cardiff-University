@@ -1,0 +1,99 @@
+body {
+	font-family: Verdana, Times, Arial;
+	font-size: 14pt;
+	margin:0px;
+}
+
+
+/*----Page container ----*/
+.container{
+	width:1000px;
+	margin: 0 auto;
+}
+
+h1 { 
+	font-size: 36pt;
+	color: red; 
+	border: thin groove;
+	border-color: black;	margin-left: 200px;
+	margin-right: 200px;
+	text-align:center;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+}
+
+ul {text-align: center;
+}
+
+ul li {
+	list-style: none;
+	display: inline;
+	padding: 50px;
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+h2.home {
+	font-size: 24pt;
+	text-align: center;
+	margin-left: 0px;
+}
+
+h2 {
+	font-size: 24pt;
+	text-align: left;
+}
+
+h3 {
+	font-size: 18pt;
+	text-align: left;
+}
+
+p.home2 {
+	text-align: justify;
+	border: dotted;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+p {
+	text-align: left;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+table {
+	border-style: groove;
+	border-color: black;
+	border-width: 2px;
+	border-collapse: collapse;
+}
+
+th {
+	text-align: center;
+	border-style: groove;
+	border-width: 2px;
+	border-color: inherit;
+}
+
+td {
+	text-align: center;
+	border-style: groove;
+	border-width: 1px;
+	border-color: inherit;
+}
+
+tbody tr:nth-child(odd){
+	background-color: gray;
+}

@@ -1,0 +1,149 @@
+Enter file contents herefrom map import *
+from game import normalise_input
+import player
+from items import *
+import items
+
+def room1_cabinet(passedValue):
+    if passedValue == "cabinet" and player.current_room["name"] == "Patient's room 4B":
+        if items.room1_cabinet_opened == False:
+            print("Inside the cabinet there is a clutter of medical forms and equpiment.")
+            print("You search around and find a key beneath a pile of old tissues.")
+            print("The key is attached to a small tag which reads 'stairwell key' ")
+            print("You pocket the key, as it will probably come in use.")
+            player.inventory.append(item_key)
+            print("--------------------------------------------------------------------------------")
+            print("Key added to inventory!")
+            items.room1_cabinet_opened = True
+            while True:
+                print("")
+                print("You can:")
+                print("CLOSE CABINET")
+                print("SEARCH FURTHER")
+                print("What do you want to do?")
+                userInput = str(input("> ")).lower()
+                userInput = userInput.strip()
+                if userInput == "close cabinet":
+                    print("You close the cabinet and go on.")
+                    return
+                elif userInput == "search further":
+                    print("You decide to look around the cabinet a little more, you find a newspaper")
+                    print("dated October 3rd 2016.")
+                    while True:
+                        print("--------------------------------------------------------------------------------")
+                        print("Would you like to read the newspaper?")
+                        print("")
+                        print("Yes / No")
+                        userInput = str(input("> ")).lower()
+                        userInput = userInput.strip()
+                        if userInput == "yes":
+                            print("Details surrounding the incident are still vague,")
+                            print("symptoms include skin lesions and uncontrollable coughing fits,")
+                            print("all medical centres in the area have been converted into research stations.")
+                            print("Desperately trying to find a cure, a spokesperson gave this statement earlier today,")
+                            print("'We don’t know what started it, we don’t know how it spreads,")
+                            print("all we know is that if you are infected it’s already too late, isolate yourself,")
+                            print("your sacrifice may be the only way to save humanity'.")
+                            return
+                        elif userInput == "no":
+                            print("")
+                            print("You decide to ignore the newspaper and close the cabinet.")
+                            return
+                        else:
+                            print("That is not a valid command.")
+                else:
+                    print("")
+                    print("That is not a valid command")
+        else:
+            print("Unfortunately, nothing has changed since the last time...")
+            print("but the newspaper is still there.")
+            while True:
+                print("--------------------------------------------------------------------------------")
+                print("Would you like to read the newspaper?")
+                print("")
+                print("Yes / No")
+                userInput = str(input("> ")).lower()
+                userInput = userInput.strip()
+                if userInput == "yes":
+                    print("Details surrounding the incident are still vague,")
+                    print("symptoms include skin lesions and uncontrollable coughing fits,")
+                    print("all medical centres in the area have been converted into research stations.")
+                    print("Desperately trying to find a cure, a spokesperson gave this statement earlier today,")
+                    print("'We don’t know what started it, we don’t know how it spreads,")
+                    print("all we know is that if you are infected it’s already too late, isolate yourself,")
+                    print("your sacrifice may be the only way to save humanity'.")
+                    return
+                elif userInput == "no":
+                    print("")
+                    print("You close the cabinet and continue.")
+                    return
+                else:
+                    print("That is not a valid command.")
+            print("You close the cabinet in dissapointment.")
+            return
+
+def open_fourth_floor_stairs(passedValue):
+    if passedValue == "south":
+        itemFound = False
+        for key in player.inventory:
+            if key["id"] == "key":
+                itemFound = True
+        if itemFound == True:
+            if player.fourth_floor_stairs_checked == False:
+                print("You try to open the door to the stairwell, but it's locked. Maybe that key")
+                print("you found earlier will come in use...")
+                player.fourth_floor_stairs_checked = True
+                print("--------------------------------------------------------------------------")
+                print("Would you like to use the key on the door?")
+                print("")
+                print("Yes / No")
+                userInput = str(input("> ")).lower()
+                userInput = userInput.strip()
+                if userInput == "yes":
+                    print("")
+                    print("You slide the key into the lock and turn. To your relief, the door swings open with ease.")
+                    print("You throw the key aside as you will no longer be needing it, and walk through the door.")
+                    print("-----------------------------------------------------------------------------------------")
+                    print("Key removed from inventory")
+                    player.inventory.remove(item_key)
+                    print("-----------------------------------------------------------------------------------------")
+                    print("You walk down the stairs to the third floor.")
+                    player.current_room = rooms["3rd Floor Corridor"]
+                    player.current_floor = 1
+                    print("As you head out into the third floor corridor you notice that the next set of stairs are")
+                    print("also locked. Another hunt begins!")
+                elif userInput == "no":
+                    print("Although using the key seems like a really good idea, you decide not to.")
+            elif player.fourth_floor_stairs_checked == True:
+                print("You come back to the stairwell with the key in hand, ready to escape!")
+                print("--------------------------------------------------------------------------")
+                print("Would you like to use the key on the door?")
+                print("")
+                print("Yes / No")
+                userInput = str(input("> ")).lower()
+                userInput = userInput.strip()
+                if userInput == "yes":
+                    print("")
+                    print("You slide the key into the lock and turn. To your relief, the door swings open with ease.")
+                    print("You throw the key aside as you will no longer be needing it, and walk through the door.")
+                    print("-----------------------------------------------------------------------------------------")
+                    print("Key removed from inventory")
+                    player.inventory.remove(item_key)
+                    print("-----------------------------------------------------------------------------------------")
+                    print("You walk down the stairs to the third floor.")
+                    player.current_room = rooms["3rd Floor Corridor"]
+                    player.current_floor = 1
+                    print("As you head out into the third floor corridor you notice that the next set of stairs are")
+                    print("also locked. Another hunt begins!")
+                elif userInput == "no":
+                    print("Although using the key seems like a really good idea, you decide not to.")
+        if itemFound == False:
+            if player.fourth_floor_stairs_checked == False:
+                print("You try to open the door to the stairwell, but it's locked. You need to get")
+                print("out of this place and those stairs are your only option. Better get looking")
+                print("for a key!")
+                player.fourth_floor_stairs_checked = True
+            elif player.fourth_floor_stairs_checked == True:
+                print("You come back to the stairwell but it is still locked. How strange.")
+                    
+

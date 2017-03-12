@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="InformaticsCoursework#"
+     xml:base="InformaticsCoursework"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="InformaticsCoursework"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#requires"/>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#uses">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Ontologies"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SemanticWeb"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Algorithms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Algorithms">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#AssemblyLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#AssemblyLanguage">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#C">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#WebTechnology"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Communication">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#ComputationalIntelligence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#ComputationalIntelligence">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#DataAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#DataAnalysis">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#DataStructures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#DataStructures">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#DataVisulisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#DataVisulisation">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Databases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Databases">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Forensics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Forensics">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Graphics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Graphics">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#HTML -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#HTML">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#WebTechnology"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#HumanComputerInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#HumanComputerInteraction">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#ImageProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#ImageProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Graphics"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Java -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Java">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#KnowledgeManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#KnowledgeManagement">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Mathematics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Mathematics">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Matlab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Matlab">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#MobileApplications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#MobileApplications">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#ObjectOriented -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#ObjectOriented">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Ontologies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Ontologies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SemanticWeb"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Optimisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Optimisation">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#PHP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#PHP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#WebTechnology"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Python -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Python">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Databases"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#WebTechnology"/>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SemanticWeb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SemanticWeb">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SignalProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SignalProcessing">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SoftwareDevelopment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SoftwareDevelopment">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Theory">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#WebTechnology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#WebTechnology">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Algorithms"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#AssemblyLanguage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#C"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Cloud"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Communication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#ComputationalIntelligence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#DataAnalysis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#DataStructures"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Databases"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Forensics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Graphics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#HumanComputerInteraction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#ImageProcessing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Java"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#KnowledgeManagement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Mathematics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Matlab"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#MobileApplications"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#ObjectOriented"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Optimisation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Python"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SemanticWeb"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SoftwareDevelopment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Theory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#WebTechnology"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#DataVisulisation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#HTML"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#Ontologies"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#PHP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SQL"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/matthew/ontologies/2016/2/untitled-ontology-7#SignalProcessing"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

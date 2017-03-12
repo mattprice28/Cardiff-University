@@ -1,0 +1,7 @@
+import math
+h = float(input("Enter your height in cm: "))
+m = float(input("Enter your weight in kg: "))
+
+c =(2 * (3.14 ** 2)) * (math.sqrt(m/h))
+
+print("Your waist is approximately " + str(c) + "cm")

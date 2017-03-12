@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/easterstyle.css"> 
+	<title>Easter</title>
+	<meta charset="utf-8" />
+</head>
+	<body>
+		<div class = "container">
+			<title>When is Easter?</title>
+				<h1>When is Easter?</h1>
+				<p>Simply enter a year to find out which day and month Easter falls on for that year!</p>
+					<form action="cgi-bin\Easter.py" method="get">
+						<label for="year">Enter Year:</label>
+						<input type="text" id="year" name="year">
+						<br><br>
+						<input type="radio" name="output" value="ddmmyyyy" id="1" checked>dd/mm/yyyy
+						<br>
+						<input type="radio" name="output" value="daymonthyear" id="2">day month year
+						<br>
+						<input type="radio" name="output" value="both" id="3" >Both
+						<br><br>
+						<input type="submit" value="submit"/>
+					</form>
+		</div>
+	</body>
+</html>

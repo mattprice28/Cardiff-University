@@ -1,0 +1,34 @@
+body {
+	font-family: Verdana, Times, Arial;
+	font-size: 14pt;
+	margin:0px;
+}
+
+
+/*----Page container ----*/
+.container{
+	width:1000px;
+	margin: 0 auto;
+}
+
+h1 { 
+	font-size: 36pt;
+	color: black; 
+	border: thin groove;
+	border-color: black;	margin-left: 200px;
+	margin-right: 200px;
+	text-align:center;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+p {
+	text-align: center;
+	
+}

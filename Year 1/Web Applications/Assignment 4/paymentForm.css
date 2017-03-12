@@ -1,0 +1,36 @@
+div{
+	background: linear-gradient(#ADAD85, #EFEFE7);
+	font-family: verdana, serif;
+	margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+h1{
+	font-size: 32pt;
+	text-align: center;
+}
+
+label
+{
+	float: left;
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.date{
+	width: 30px;
+	margin-right: 2px;
+}
+
+.submit{
+	display: block;
+	margin: 10px auto;
+}
+
+p{
+	text-align: center;
+}

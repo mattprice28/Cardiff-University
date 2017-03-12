@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/paymentForm.css">
+		<title>Payment Information</title>
+	</head>
+	<body>
+	<div>
+	<h1>Payment Form</h1>
+		<form name="paymentForm" action="paymentSubmitted.html" method="post" onsubmit="return validateForm()">
+			<label for="cardNumber">Card Number</label> <input type="int" id="cardNumber" onfocus="displayMessageA()"><br>
+			<label for="expiryDate">Expiry Date</label> <input class="date" type="int" name="expiryMonth" id="expiryDate" value="mm" onfocus="displayMessageB()"> <input class="date" type="int" name="expiryYear" id="expiryDate" value="yy" onfocus="displayMessageC()"><br>
+			<label for="name">Name on Card</label> <input type="text" id="name" onfocus="displayMessageD()"><br>
+			<label for="securityCode">Security Code</label> <input class="date" type="int" id="securityCode" onfocus="displayMessageE()"><br><br>
+			<input class="submit" type="submit" value="Submit">
+			<p id="message">Click any box to display further information.</p>
+		</form>
+	</div>
+		<script>
+			function validateForm() {
+	    		
+	    		var name = document.forms["paymentForm"]["name"].value;
+			    if (name == null || name == "") {
+			        document.getElementById("message").innerHTML ="Name must be filled out";
+			        return false;
+			    }
+
+			 	var number = document.forms["paymentForm"]["cardNumber"].value;
+			    if (number.length != 16) {
+			    	document.getElementById("message").innerHTML ="Card Number must contain 16 digits";
+			    	return false;
+			    }
+
+			    var security = document.forms["paymentForm"]["securityCode"].value;
+			    if (security.length != 3) {
+			    	document.getElementById("message").innerHTML ="Security Code must contain 3 digits";
+			    	return false;
+			    }
+
+			    var month = document.forms["paymentForm"]["expiryMonth"].value;
+			    if (isNaN(month) || month < 1 || month > 12) {
+        			document.getElementById("message").innerHTML ="Month must be a number between 1 and 12";
+        			return false;
+    			}
+
+    			var year = document.forms["paymentForm"]["expiryYear"].value;
+			    if (isNaN(year)) {
+        			document.getElementById("message").innerHTML ="Year must be a number";
+        			return false;
+    			}
+			}
+
+			function displayMessageA() {
+
+			document.getElementById("message").innerHTML ="Please enter the 16 digit number on the front of your card.";
+
+			}
+
+			function displayMessageB() {
+
+			document.getElementById("message").innerHTML ="Please enter the month your card expires.";
+
+			}
+
+			function displayMessageC() {
+
+			document.getElementById("message").innerHTML ="Please enter the year your card expires.";
+
+			}
+
+			function displayMessageD() {
+
+			document.getElementById("message").innerHTML ="Please enter your name as it appears on the front of your card.";
+
+			}
+
+			function displayMessageE() {
+
+			document.getElementById("message").innerHTML ="Please enter the 3 digit security code on the back of your card.";
+
+			}
+
+		</script>
+	</body>
+</html>
